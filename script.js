@@ -4,8 +4,6 @@ const webr = new WebR();
 await webr.init();
 
 // Define the function globally by attaching it to the `window` object
-// this ensures the function can be called properly when we import
-// this javascript file to the HTML
 window.sampleNormalDist = async function() {
   // Get the user input values
   const mean = parseFloat(document.getElementById("mean").value);
@@ -21,9 +19,12 @@ window.sampleNormalDist = async function() {
   // Call the R function with the user-provided arguments
   const result = await webr.evalR(`generate_samples(${mean}, ${stddev})`);
 
-  // Convert the result to a string
-  const output = await result.toString();
+  // Convert the result to an array
+  const output = await result.toArray();
+
+  // Format the output for display (e.g., join with newlines)
+  const formattedOutput = output.map(num => num.toFixed(2)).join('\n');
 
   // Display the output
-  document.getElementById("output").textContent = output;
+  document.getElementById("output").textContent = formattedOutput;
 };
