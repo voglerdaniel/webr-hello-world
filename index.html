@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebR Normal Distribution Sampler</title>
+  <script src="https://webr.r-wasm.org/latest/webr.mjs"></script>
+  <script src="script.js" type="module"></script>
+</head>
+<body>
+  <h1>Normal Distribution Sampler</h1>
+  
+  <label for="mean">Mean:</label>
+  <input type="number" id="mean" step="0.01" value="0"><br><br>
+
+  <label for="stddev">Standard Deviation:</label>
+  <input type="number" id="stddev" step="0.01" value="1"><br><br>
+
+  <button onclick="sampleNormalDist()">Sample Random Numbers</button>
+
+  <h2>Output: (10 randomly sampled numbers from the R script):</h2>
+  <p id="output"></p>
+</body>
+</html>
