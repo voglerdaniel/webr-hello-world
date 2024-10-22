@@ -1,8 +1,8 @@
 # Hello World in WebR
 
-To get started, download or pull this repo. Also, make sure you have [Python3 installed](https://www.python.org/downloads/). You don't need to write Python code for this to work; we just need Python to write two lines of Terminal code that will allow you to see this test code locally in your browser.
+To get started, download or pull this repo. Also, make sure you have [Python3 installed](https://www.python.org/downloads/). You don't need to write Python code for this to work; we just need Python to a line of Terminal code that will allow you to see this test code locally in your browser.
 
-Then, in the terminal, navigate this repo stored and run
+In the terminal, navigate this repo stored and run
 
 ```
 python3 -m http.server
