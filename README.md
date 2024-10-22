@@ -14,6 +14,15 @@ If you have problems with the commands above, try:
 python -m http.server
 ```
 
-Now, open a web browser (I've worked mostly with Chrome) and type "http://localhost:8000" into the URL bar. You should now see a webpage like this:
+Now, open a web browser (I've worked mostly with Chrome) and type `http://localhost:8000` into the URL bar. You should now see a webpage like this:
 
 ![image](./resources/screenshot.png)
+
+Once this is working in your local machine (that's what visiting `http://localhost:8000` allows you to check), you can modify the HTML, Javascript, and R scripts however you want. To publish a WebR app so others can see, consider a free service that can host static pages like [Github Pages](https://pages.github.com). Just make sure you upload all of the necessary files. Your repo structure will look something like:
+```
+.
+├── index.html
+├── script.R
+├── script.js
+└── styles.css
+```
