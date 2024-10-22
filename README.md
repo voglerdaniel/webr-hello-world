@@ -26,3 +26,4 @@ Once this is working in your local machine (that's what visiting `http://localho
 ├── script.js
 └── styles.css
 ```
+See the [WebR docs](https://docs.r-wasm.org/webr/latest/) for more info.
